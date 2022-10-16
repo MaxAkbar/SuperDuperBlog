@@ -1,0 +1,10 @@
+﻿@{
+    if (Context.Request.Path.ToString().EndsWith("test", StringComparison.InvariantCultureIgnoreCase))
+    {
+        Layout = "_Layout2"; // _navbar_static";
+    }
+    else
+    {
+        Layout = "_Layout";
+    }
+}
